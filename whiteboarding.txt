@@ -1,0 +1,31 @@
+site design -> figma
+documenting the site - google doc
+
+HTML & CSS
+components:
+	navbar
+	side menu
+	main content
+	footer
+
+pages:
+	home
+	menu
+	services offered
+	testimonials
+	recipes
+	contact us
+
+TEXT
+page content
+
+FIGMA
+page design
+
+#!/bin/bash
+myfile='t.txt'
+i=1
+while read -r lines; doAssignment
+By working in groups of not more than 5, try carrying out the above exercise for a 
+website of your own creation. Document every step. What would you like to make a 
+site about? Build the site using HTML and CSS only.
