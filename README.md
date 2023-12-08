@@ -1,1 +1,1 @@
-# A simple restaurant website
+# A restaurant website done in `Django`
