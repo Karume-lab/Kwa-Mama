@@ -4,5 +4,108 @@
 {% block title %}Feedback{% endblock title %}
 
 {% block body %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="header"></div>
+      <div class="main">
+        <div class="pizza">
+          <img
+            src="pictures/WhatsApp_Image_2023-12-09_at_1.58.40_PM__1_-removebg-preview.png"
+            width="80"
+            alt=""
+          />
+        </div>
+        <div class="noodles">
+          <img
+            src="pictures/WhatsApp_Image_2023-12-09_at_1.58.40_PM-removebg-preview.png"
+            width="96"
+            style="transform: rotate(30deg)"
+            alt=""
+          />
+        </div>
+        <div class="cake">
+          <img
+            src="pictures/WhatsApp_Image_2023-12-09_at_1.58.42_PM-removebg-preview.png"
+            width="100"
+            style="transform: rotate(-30deg)"
+            alt=""
+          />
+        </div>
+        <div class="spoons">
+          <img
+            src="pictures/WhatsApp_Image_2023-12-09_at_1.58.42_PM__1_-removebg-preview.png"
+            width="80"
+            style="transform: rotate(-20deg)"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="inner-container">
+            <div class="upper-text"><p>Tell us ...</p></div>
+            <div class="lower-elements">
+              <div class="leftside-elements">
+                <p>Help us help you!</p>
+                <div>
+                  <img
+                    src="pictures/WhatsApp_Image_2023-12-09_at_1.59.04_PM-removebg-preview.png"
+                    width="200"
+                  />
+                </div>
+              </div>
+              <div class="rightside-elements">
+                <form action="">
+                  <div>
+                    <p>Feedback type</p>
+                    <input
+                      type="radio"
+                      id="choice1"
+                      name="feedback-type"
+                      required
+                    />
+                    <label for="choice1">In-house services</label>
+                    <input
+                      type="radio"
+                      id="choice2"
+                      name="feedback-type"
+                      required
+                    />
+                    <label for="choice2">Catering services</label>
+                  </div>
+
+                  <div>
+                    <p>Names</p>
+                    <input type="text" id="names" name="names" required />
+                  </div>
+                  <div>
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div>
+                    <p>Message</p>
+                    <input type="text" id="message" name="message" required />
+                  </div>
+                  <div class="input-buttons">
+                    <input type="reset" />
+                    <input type="submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
+
 	<span>Feedback page</span>
 {% endblock body %}
