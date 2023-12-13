@@ -1,70 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Kalam:wght@300;400;700&display=swap');
-*{
-   margin: 0;
-   padding: 0;
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Kalam:wght@300;400;700&display=swap');
+.outer-container{
+    width: 650px;
+    height: 400px;
+    
 }
-.outer{
-   width: 1349px;
 
-}
-.header {
+.header{
     height: 38px;
-    background-color: #4d2d18;
-
+    background-color: #4d2d18 
 }
-
-.main {
-    background-image: linear-gradient(#8A6240, #CABA9C);
+.main{
+    height: 410px;
+    background-image :linear-gradient(#8A6240,#CABA9C);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
 
-.footer {
+
+}
+.footer{
     height: 38px;
     background-color: #4d2d18;
 }
-
-.pizza {
+.pizza{
     position: absolute;
-    top: 0;
+    top:0;
     left: 0;
 }
-
-.noodles img {
-    transform: rotate(45deg);
-    width: 270px;
+.noodles img{
+    transform:rotate(45dec); 
 }
-
-.noodles {
+.noodles{
     position: absolute;
     top: 0;
-    right: 6px;
-}
+    right: 6px; 
 
-.spoons {
+}
+.spoons{
     position: absolute;
     bottom: 0;
     left: 0;
 }
-
-.cake {
+.cake{
     position: absolute;
-    right: -10px;
-    bottom: -28px;
-}
-
+    right: 0;
+    bottom: -28px;    
+} 
 .input-buttons {
     display: flex;
     gap: 10px;
 }
-
-.inner-container {
-    width: 900px;
-    height: 450px;
+.inner-container{
+    width: 500px;
+    height: 350px;
     background-color: #8A6240;
     margin-right: 10px;
     border-radius: 7px;
@@ -72,76 +61,64 @@
     z-index: 4;
 
 }
-
-.body {
+.body{
     margin: 0;
 }
-
-.lower-elements {
+.lower-elements{
     display: flex;
     margin-top: 15px;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
-* {
+*{
     font-size: small;
     font-family: 'kalam', cursive;
 }
 
-input,
-p {
+input,p{
     margin: 1px;
 }
 
-p {
+p{
     margin-left: 20px;
     color: white;
 }
-
-.rightside-elements p {
+.rightside-elements p{
     margin-left: 70px;
-    font-size: 15px;
+    font-size: 13px;
 }
-
 input {
     border: 1px solid #8A6240;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #CABA9C;
 
 }
-
-#names,
-#email,
-#message {
+#names,#email,#message{
     width: 200px;
     height: 30px;
 }
-
 #message {
     width: 200px;
     height: 60px;
 }
-
 .input-buttons {
     display: flex;
-    gap: 120px;
+    gap: 120px; 
 }
 
-.upper-text,
-.leftside-elements p {
+.upper-text p,.leftside-elements p{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.upper-text {
+.upper-text p{
     text-align: center;
-    color: white;
 }
 
-.rightside-elements {
+.rightside-elements{
     margin-right: 30px;
 }
 
-.input-buttons input {
+.input-buttons input{
     font-weight: bold;
 }
