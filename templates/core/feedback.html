@@ -1,15 +1,15 @@
 {% extends '../base.html' %}
+{% load static %}
 
 
 {% block title %}Feedback{% endblock title %}
 
 {% block body %}
-<body>
     <div class="outer-container">
         <div class="header"></div>
         <div class="main">
             <div class="pizza">
-                <img src="pictures/WhatsApp_Image_2023-12-09_at_1.58.40_PM__1_-removebg-preview.png" width="80" alt="">
+                <img src="{% static 'img/feedback/pizza.png' %}" width="80" alt="">
             </div>
             <div class="noodles">
                 <img
@@ -105,5 +105,4 @@
         </div>
         <div class="footer"></div>
     </div>
-</body>
 {% endblock body %}
