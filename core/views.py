@@ -12,3 +12,5 @@ def home(request):
 
 def feedback(request):
     return render(request, "core/feedback.html")
+def catering(request):
+    return render(request,"core/catering.html")

@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Kalam:wght@300;400;700&display=swap');
-*{
-   margin: 0;
-   padding: 0;
-}
 .outer{
    width: 1349px;
 
@@ -23,15 +19,14 @@
     overflow: hidden;
 }
 
-.footer {
-    height: 38px;
-    background-color: #4d2d18;
-}
-
 .pizza {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.pizza img{
+    width:250px;
 }
 
 .noodles img {
@@ -50,6 +45,10 @@
     bottom: 0;
     left: 0;
 }
+.spoons img{
+    width:250px;
+    transform: rotate(-30deg);
+}
 
 .cake {
     position: absolute;
@@ -57,9 +56,9 @@
     bottom: -28px;
 }
 
-.input-buttons {
-    display: flex;
-    gap: 10px;
+.cake img{
+    width:250px;
+    transform: rotate(-45deg);
 }
 
 .inner-container {
@@ -83,7 +82,7 @@
     justify-content: space-between;
 }
 
-* {
+.upper-text,.leftside-elements p,.form{
     font-size: small;
     font-family: 'kalam', cursive;
 }
@@ -99,7 +98,7 @@ p {
 }
 
 .rightside-elements p {
-    margin-left: 70px;
+    margin-left: 50px;
     font-size: 15px;
 }
 
@@ -114,17 +113,17 @@ input {
 #email,
 #message {
     width: 200px;
-    height: 30px;
+    height: 35px;
 }
 
 #message {
     width: 200px;
-    height: 60px;
+    height: 65px;
 }
 
 .input-buttons {
     display: flex;
-    gap: 120px;
+    gap: 60px;
 }
 
 .upper-text,
@@ -139,9 +138,22 @@ input {
 }
 
 .rightside-elements {
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .input-buttons input {
-    font-weight: bold;
+    font-weight: 900;
+
+}
+.input-buttons input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.thumbs-up img{
+    width:310px;
+}
+
+.leftside-elements{
+    margin-left: 30px;
 }
