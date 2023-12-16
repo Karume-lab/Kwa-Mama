@@ -5,43 +5,35 @@
 {% block title %}Feedback{% endblock title %}
 
 {% block body %}
-<div class="outer">
-
-    <!-- HEADER BEGIN -->
-  <header class="header"></header>
-  <!-- HEADER END -->
-
   <!-- MAIN BEGIN -->
   <main class="main">
     <div class="pizza">
-      <img src="{% static 'img/feedback/pizza.png' %}" width="250" alt="" />
+      <img src="{% static 'img/feedback/pizza.png' %}"alt="" />
     </div>
     <div class="noodles">
-      <img src="{% static 'img/feedback/ramen.png' %}"alt="" />
+      <img src="{% static 'img/feedback/ramen.png' %}" alt="" />
     </div>
     <div class="cake">
-      <img src="{% static 'img/feedback/cake-copy.png' %}" width="250"
-        style="transform: rotate(-45deg)" alt="" />
+      <img src="{% static 'img/feedback/cake-copy.png' %}"  alt="" />
     </div>
     <div class="spoons">
-      <img src="{% static 'img/feedback/fork-knife-spoon-copy.png' %}" width="250"
-        style="transform: rotate(-30deg)" alt="" />
+      <img src="{% static 'img/feedback/fork-knife-spoon-copy.png' %}" alt="" />
     </div>
     <div class="inner-container">
       <h3 class="upper-text">Tell us ...</h3>
       <div class="lower-elements">
         <div class="leftside-elements">
           <p>Help us help you!</p>
-          <div>
-            <img src="{% static 'img/feedback/feedback-thumbs-up.png' %}" width="250" />
+          <div class="thumbs-up">
+            <img src="{% static 'img/feedback/feedback-thumbs-up.png' %}" />
           </div>
         </div>
         <div class="rightside-elements">
 
           <!-- FORM BEGIN -->
-          <form action="">
+          <form class="form" action="">
             <div>
-              <p>Feedback type</p>
+              <p class="feedback-txt">Feedback type</p>
               <input type="radio" id="choice1" name="feedback-type" required />
               <label for="choice1">In-house services</label>
               <input type="radio" id="choice2" name="feedback-type" required />
@@ -72,9 +64,4 @@
     </div>
   </main>
   <!-- MAIN END -->
-
-  <!-- FOOTER BEGIN -->
-  <footer class="footer"></footer>
-  <!-- FOOTER END -->
-</div>  
 {% endblock body %}
