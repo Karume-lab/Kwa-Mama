@@ -135,9 +135,10 @@ input {
     margin-right: 40px;
 }
 
-.input-buttons input {
-    font-weight: 900;
-
+.reset-submit-buttons{
+    display: flex;
+    gap: 70px;
+    margin-top: 10px;
 }
 
 .reset-submit-buttons button{
@@ -149,7 +150,7 @@ input {
     
 }
 .reset{
-    margin-left: 6px;
+    margin-left: 7px;
 }
 
 .thumbs-up img{
