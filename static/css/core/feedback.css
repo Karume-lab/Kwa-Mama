@@ -134,12 +134,10 @@ input {
 .rightside-elements {
     margin-right: 40px;
 }
-.reset-submit-buttons{
-    display: flex;
-    gap: 80px;
-    margin-top: 5px;
-    
-   
+
+.input-buttons input {
+    font-weight: 900;
+
 }
 
 .reset-submit-buttons button{
