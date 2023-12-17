@@ -30,7 +30,8 @@
             </div>
             <div class="rightside-elements">
                 <!-- FORM BEGIN -->
-                <form class="form" action="">
+                <form class="form" id="contactForm" method="post">
+                    {% csrf_token %}
                     <div>
                         <p class="feedback-txt">Feedback type</p>
                         <input

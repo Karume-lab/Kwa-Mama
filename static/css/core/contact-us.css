@@ -1,23 +1,28 @@
-.feedback {
+/* .feedback {
   width: 284px;
   height: 0%;
   /* background-color: rgba(255, 255, 255, 1); */
-  border-radius: 20px;
+  /* border-radius: 20px;
   overflow: hidden;
   background: linear-gradient(
     180deg,
     rgb(144, 102, 68) 100%,
     rgb(152, 140, 132) 100%
   );
-}
 
-.feedback {
-  width: 2849px;
-  height: 1778px;
+}
+ */
+ .feedback {
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
-  background: linear-gradient(180deg, rgb(144, 102, 68) 0%, rgb(152, 140, 132) 100%);
+  background: linear-gradient(180deg, rgb(144, 102, 68), rgb(152, 140, 132));
+  padding: 2%;
+  margin: auto;
+  position: relative;
 }
+
+
 
 .feedback .overlap {
   position: relative;
