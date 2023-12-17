@@ -5,16 +5,21 @@
 {% block title %}catering{% endblock title %}
 
 {% block body %} 
+<!--MAIN BEGIN-->
 <main>
 
+  <!--BACK-ground IMAGE BEGIN-->
   <div class="back-ground">
     <img src="{% static "img/catering/background.jpg" %}" > 
 
     <div>
       <h2 class="intro-text">Catering Services</h2>
    </div>
-  
+  <!--PACKAGES BEGIN-->
+
    <div class="packages">
+    
+    <!--PACKAGE-1 BEGIN-->
      <div class="package1">
        <div class="top-elements">
          <p class="package-title">Basic Package</p>
@@ -31,7 +36,9 @@
          <div class="get-button"><button>GET</button></div>
        </div>
      </div>
-  
+    <!--PACKAGE-1 END-->
+
+    <!--PACKAGE-2 BEGIN-->
      <div class="package2">
        <div class="top-elements">
          <p class="package-title">Advanced Package</p>
@@ -48,7 +55,9 @@
          <div class="get-button"><button>GET</button></div>
        </div>
      </div>
-  
+    <!--PACKAGE-2 END-->
+
+    <!--PACKAGE-3 BEGIN-->
      <div class="package3">
        <div class="top-elements">
          <p class="package-title">Premium Package</p>
@@ -68,8 +77,13 @@
      </div>
    </div>
 
-  </div>
+   <!--PACKAGE3 END-->
 
+   <!--PACKAGES END-->
+
+  </div>
+<!--BACK-ground IMAGE END-->
 
 </main>
+<!--MAIN END-->
 {% endblock body %}
