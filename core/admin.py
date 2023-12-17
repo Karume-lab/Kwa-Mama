@@ -12,13 +12,10 @@ class ContactMessage(admin.ModelAdmin):
     ]
 admin.site.register(models.ContactMessage, ContactMessage)
 
-
 class Feedback(admin.ModelAdmin):
-    list_display = [
-        "feedback_type",
-        "names",
-        "email",
-        "message",
-    ]
-admin.site.register(models.Feedback, Feedback)
+    list_display = ["names", 
+                    "email", 
+                    "message",
+                    ]
 
+admin.site.register(models.Feedback, Feedback)

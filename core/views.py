@@ -21,9 +21,9 @@ def catering(request):
 
 def feedback(request):
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = FeedbackForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponse("Thank you for your feedback!")
 
-    return render(request, 'core/feedback.html', {'feedback_form': feedback})
+    return render(request, 'core/feedback.html')
