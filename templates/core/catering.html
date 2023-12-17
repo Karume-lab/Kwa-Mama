@@ -5,65 +5,71 @@
 {% block title %}catering{% endblock title %}
 
 {% block body %} 
-<main class="main">
-  <div class="buffet">
-    <img src="New folder/images/center.png" alt="" />
-    <div class="overlay"></div>
-    <h2 class="text-overlay">Catering Services</h2>
+<main>
+
+  <div class="back-ground">
+    <img src="{% static "img/catering/buffet.png" %}" > 
+
+    <div>
+      <h2 class="intro-text">Catering Services</h2>
+   </div>
+  
+   <div class="packages">
+     <div class="package1">
+       <div class="top-elements">
+         <p class="package-title">Basic Package</p>
+         <img class="icon" src="{% static "img/catering/a.png" %}" alt="" />
+         <p class="price">Sh. 500 Per Person</p>
+       </div>
+       <hr />
+       <div class="bottom-elements">
+         <ul class="services">
+           <li>Self-service Buffet available</li>
+           <li>Choose any 3 meals from our Buffet</li>
+           <li>Food delivery to door-step,no set up.</li>
+         </ul>
+         <div class="get-button"><button>GET</button></div>
+       </div>
+     </div>
+  
+     <div class="package2">
+       <div class="top-elements">
+         <p class="package-title">Advanced Package</p>
+         <img class="icon" src="{% static "img/catering/b.png" %}" alt="" />
+         <p class="price">Sh. 800 Per Person</p>
+       </div>
+       <hr />
+       <div class="bottom-elements">
+         <ul class="services">
+           <li>Self-service and served Buffet available</li>
+           <li>Choose from any 4 meals and a drink from our menu</li>
+           <li>Delivery to door-step and catering set up</li>
+         </ul>
+         <div class="get-button"><button>GET</button></div>
+       </div>
+     </div>
+  
+     <div class="package3">
+       <div class="top-elements">
+         <p class="package-title">Premium Package</p>
+         <img class="icon" src="{% static "img/catering/c.png" %}"alt="" />
+         <p class="price">Sh. 1500 Per Person</p>
+       </div>
+       <hr />
+       <div class="bottom-elements">
+         <ul class="services">
+           <li>Self-service, served Buffet and plated-sevice available</li>
+           <li>Choose from any 6 meals and 2 drinks from our menu</li>
+           <li>Delivery to door-step and catering set up provided</li>
+           <li>Cutlery and crockery provided</li>
+         </ul>
+         <div class="get-button"><button>GET</button></div>
+       </div>
+     </div>
+   </div>
+
   </div>
 
-  <div class="packages">
-    <div class="package1">
-      <div class="top-elements">
-        <p class="package-title">Basic Package</p>
-        <img class="icon" src="New folder/images/a.png" alt="" />
-        <p class="amount">Sh. 500 Per Person</p>
-      </div>
-      <hr />
-      <div class="bottom-elements">
-        <ul class="services">
-          <li>Self-service Buffet available</li>
-          <li>Choose any 3 meals from our Buffet</li>
-          <li>Food delivery to door-step,no set up.</li>
-        </ul>
-        <div class="rect"></div>
-      </div>
-    </div>
 
-    <div class="package2">
-      <div class="top-elements">
-        <p class="package-title">Advanced Package</p>
-        <img class="icon" src="New folder/images/b.png" alt="" />
-        <p class="amount">Sh. 800 Per Person</p>
-      </div>
-      <hr />
-      <div class="bottom-elements">
-        <ul class="services">
-          <li>Self-service and served Buffet available</li>
-          <li>Choose from any 4 meals and a drink from our menu</li>
-          <li>Delivery to door-step and catering set up</li>
-        </ul>
-        <div class="rect"></div>
-      </div>
-    </div>
-
-    <div class="package3">
-      <div class="top-elements">
-        <p class="package-title">Basic Package</p>
-        <img class="icon" src="New folder/images/c.png" alt="" />
-        <p class="amount">Sh. 1500 Per Person</p>
-      </div>
-      <hr />
-      <div class="bottom-elements">
-        <ul class="services">
-          <li>Self-service, served Buffet and plated-sevice available</li>
-          <li>Choose from any 6 meals and 2 drinks from our menu</li>
-          <li>Delivery to door-step and catering set up provided</li>
-          <li>Cutlery and crockery provided</li>
-        </ul>
-        <div class="rect"></div>
-      </div>
-    </div>
-  </div>
 </main>
 {% endblock body %}

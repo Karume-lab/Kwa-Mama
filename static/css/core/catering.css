@@ -1,46 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
 @import url('https://fonts.cdnfonts.com/css/kapakana');              
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Kalam:wght@300;400;700&display=swap');
-.packages{
-    background: linear-gradient(180deg, #906644 0%, #988C84 100%);
-    display: flex;
-    justify-content: space-between;
-    width: 1349px;
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Kalam:wght@300;400&display=swap');
 
-
-}
-.buffet{
+.back-ground{
     position: relative;
     width:1349px;
-    height: 500px; 
-    
-    
+    height: 1100px;    
 }
 
-.buffet img{
+.back-ground img{
     width: 100%;
     height: 100%;
 }
 
-.text-overlay{
-    width: 1009px;
+
+.intro-text{
+    text-align: center;
+    width: 1309px;
     position: absolute;
-    top: 60%; 
+    top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    color: rgb(17, 15, 15); 
+    color: #140101;
     font-size: 200px;
-    font-weight: lighter;
-    font-family: kapakana;
-    z-index: 1;
+    font-weight: light;
+    font-family: Gwendolyn;
+
+}
+
+.packages{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 1340px;
+    bottom:40px;
 
 }
 
 .package1,.package2,.package3{
   background-color: #946944;
-  width: 250px;
-  height: 545px;
+  width: 310px;
+  height: 559px;
   flex-shrink: 0; 
   margin: 20px 20px;
   border-radius: 10px;
@@ -59,11 +60,6 @@
 .package1 img,.package2 img,.package3 img{
     width: 150px;
     margin-top: 20px;
-}
-
-
-ul {
-    list-style-type: none;
 }
 
 .top-elements{
@@ -85,10 +81,12 @@ font-family: kalam;
 font-size: 15px;
 font-style: normal;
 line-height: 1.5;
+margin-top: -9px;
 }
-.amount{
-    font-size: x-large;
-   
+.price{
+    font-size: larger;
+    color: #140101;
+    font-weight: 600;
     font-family: Radley;
 }
 
@@ -118,14 +116,21 @@ line-height: 1.5;
 .services li{
     margin-bottom: 20px;
 }
-.rect{
+.get-button button{
     width: 150px;
     height: 45px;
     background: #4E2D18;
     position: absolute;
-    bottom: -448px;
+    top: 520px;
     margin-left: 50px;
+    
+    border: 1px solid rgba(78, 16, 16, 0.5);
     border-radius: 6px;
+    text-align: center;
+    padding-top: 14px;
+    color: #FFF;
+    font-family: Kalam;
+
 
 }
 hr{
