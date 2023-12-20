@@ -1,16 +1,17 @@
 from django.shortcuts import render, redirect
-from .forms import FeedbackForm, ContactForm
+from . import forms
 from django.http import HttpResponse
-from .forms import FeedbackForm
 
 
 def index(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
+    if request.method == "POST":
+        form = forms.ContactForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponse("Thank you for contacting us!")
-    return render(request, "core/index.html")
+    else:
+        form = forms.ContactForm()
+    return render(request, "core/index.html", {"form": form})
 
 
 def home(request):
@@ -25,5 +26,8 @@ def feedback(request):
         if form.is_valid():
             form.save()
             return HttpResponse("Thank you for your feedback!")
-
     return render(request, 'core/feedback.html')
+
+def catering(request):
+    return render(request, "core/catering.html")
+

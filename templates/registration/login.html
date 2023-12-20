@@ -1,12 +1,28 @@
 {% extends "../registration/base.html" %}
+{% load static %}
 
 {% block title %}Log In{% endblock %}
 
-{% block content %}
-<h2>Log In</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Log In</button>
-</form>
-{% endblock %}
+{% block body %}
+<main class="login-main">
+    <div class="form-container" style="background-image: url({% static 'img/log in/form-background.png' %});">
+        <div class="form-body">
+            <h2 class="login-form-title">Welcome Back</h2>
+            <form method="post" class="login-form">
+                {% csrf_token %}
+                <div class="form-field">
+                    {{ form.username.label }} {{ form.username }}
+                </div>
+                <div class="form-field">
+                    {{ form.password.label }} {{ form.password }}
+                </div>
+                <button type="submit">LOG IN</button>
+                <span>
+                    Don’t have an account?
+                    <a href="{% url 'users:signup' %}">Sign up</a>
+                </span>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock body %}
