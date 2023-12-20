@@ -1,16 +1,18 @@
 from django.shortcuts import render, redirect
-from .forms import ContactForm
+from . import forms
 from django.http import HttpResponse
 
 
 # Create your views here.
 def index(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
+    if request.method == "POST":
+        form = forms.ContactForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponse("Thank you for contacting us!")
-    return render(request, "core/index.html")
+    else:
+        form = forms.ContactForm()
+    return render(request, "core/index.html", {"form": form})
 
 
 def home(request):
@@ -20,5 +22,6 @@ def home(request):
 def feedback(request):
     return render(request, "core/feedback.html")
 
+
 def catering(request):
-    return render(request,"core/catering.html")
+    return render(request, "core/catering.html")
