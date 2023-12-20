@@ -31,3 +31,5 @@ def feedback(request):
 def catering(request):
     return render(request, "core/catering.html")
 
+def login(request):
+    return render(request,"registration/login.html")
