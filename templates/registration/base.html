@@ -9,7 +9,6 @@
         <title>METRO MUNCH | {% block title %}{% endblock %}</title>
     </head>
     <body class="body-reg">
-        {% block body %} {% endblock body %}
         <div class="pizza-reg">
             <img src="{% static 'img/feedback/pizza.png' %}" alt="">
         </div>
@@ -22,5 +21,15 @@
         <div class="spoons-reg">
             <img src="{% static 'img/feedback/fork-knife-spoon.png' %}" alt="">
         </div>
+        {% block body %}
+            <h2>{% block form_title %}{% endblock form_title %}</h2>
+            <form method="post">
+                {% csrf_token %}
+                {% block form %}
+                {% block form_button %}{% endblock form_button %}
+                <span>{% block form_footer_link %}{% endblock form_footer_link %}</span>
+                {% endblock form %}
+            </form>
+        {% endblock body %}
     </body>
 </html>
