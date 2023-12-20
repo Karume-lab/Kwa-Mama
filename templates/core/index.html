@@ -36,11 +36,54 @@
     <section id="services" class="services"></section>
     <!-- SERVICES END -->
     <!-- CONTACT US START -->
-    <section id="contact-us" class="contact-us"></section>
+    <section id="contact-us" class="feedback" id="contact-us">
+        <div class="overlap">
+            <div class="contact-us-form">
+                <!-- THE START OF CONTACT US FORM -->
+                <form id="contactForm" method="post">
+                    {% csrf_token %}
+                    <div>
+                        <div class="overlap-2">
+                            <img class="line" src="{% static 'img/contact-us/line-icon.png' %}">
+                            <div class="text-wrapper-2">Name</div>
+                        </div>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <div class="overlap-3">
+                            <img class="img" src="{% static 'img/contact-us/line-icon.png' %}">
+                            <div class="text-wrapper-2">Email</div>
+                        </div>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <div class="overlap-group-2">
+                            <img class="line-2" src="{% static 'img/contact-us/line-icon.png' %}">
+                            <div class="text-wrapper-2">Message</div>
+                        </div>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="div-wrapper">
+                        <button class="text-wrapper-3" type="submit">Send</button>
+                    </div>
+                </form>
+                <!-- THE END CONTACT US FORM -->
+            </div>
+        </div>
+    </section>
     <!-- CONTACT US END -->
     <!-- METRO SPECIALS START -->
     <section id="metro-specials" class="metro-specials">
-        <!-- METRO SPECIALS END -->
         <div class="food-day-container">
             <h2 class="food-title">Savory Sunday</h2>
             <div class="food-day-body">
@@ -138,89 +181,41 @@
             </div>
         </div>
     </section>
+    <!-- METRO SPECIALS END -->
 </main>
 <!--  -->
-<!-- START OF CONTACT US PAGE-->
-<section id="contact_us_form" class="contact-us">
-<div class="feedback">
-<!-- CONTACT US -->
-<div class="feedback" id="contact us">
-    <div class="overlap">
-        <div class="contact-us-form">
-            <!-- THE START OF CONTACT US FORM -->
-            <form id="contactForm" method="post">
-                {% csrf_token %}
-                <div>
-                    <div class="overlap-2">
-                        <img class="line" src="{% static 'img/contact-us/line-icon.png' %}">
-                        <div class="text-wrapper-2">Name</div>
-                    </div>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                    >
-                </div>
-                <div>
-                    <div class="overlap-3">
-                        <img class="img" src="{% static 'img/contact-us/line-icon.png' %}">
-                        <div class="text-wrapper-2">Email</div>
-                    </div>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    >
-                </div>
-                <div>
-                    <div class="overlap-group-2">
-                        <img class="line-2" src="{% static 'img/contact-us/line-icon.png' %}">
-                        <div class="text-wrapper-2">Message</div>
-                    </div>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="div-wrapper">
-                    <button class="text-wrapper-3" type="submit">Send</button>
-                </div>
-            </form>
-            <!-- THE END CONTACT US FORM -->
+<!-- THE START OF BACKGROUND IMAGES -->
+<div class="background-doodles">
+    <img class="img-2" src="{% static 'img/feedback/cake-copy.png' %}">
+    <img class="illustr-PNG-PSD" src="{% static 'img/feedback/fork-knife-spoon-copy.png' %}">
+    <img class="img-3" src="{% static 'img/feedback/pizza.png' %}">
+    <img class="img-4" src="{% static 'img/feedback/ramen.png' %}">
+</div>
+<div class="contact-info">
+    <div class="overlap-4">
+        <div class="text-wrapper-4" font-family="Homemade Apple">
+            Contact Info
         </div>
+        <div class="text-wrapper-5">River Road, Kijani.</div>
+        <div class="image">
+            <img class="location-icon" src="{% static 'img/contact-us/location-icon.png' %}">
+        </div>
+        <div class="text-wrapper-6">@metro_munch873</div>
+        <img class="instagram-icon" src="{% static 'img/contact-us/instagram-icon.png' %}">
+        <div class="text-wrapper-7">metromunch@gmail.com</div>
+        <img class="mail-icon" src="{% static 'img/contact-us/Email-icon.png' %}">
+        <div class="text-wrapper-8">+873 933 920123</div>
+        <img class="phone-icon" src="{% static 'img/contact-us/phone-icon.png' %}">
+        <div class="overlap-group-3">
+            <div class="text-wrapper-9">Open 24hrs</div>
+            <img class="clock-icon" src="{% static 'img/contact-us/clock-icon.png' %}">
+        </div>
+        <img class="line-3" src="{% static 'img/contact-us/line-icon.png' %}">
     </div>
-</section>
-            <!-- THE START OF BACKGROUND IMAGES -->        
-        <div class="background-doodles">
-            <img class="img-2" src="{% static 'img/feedback/cake-copy.png' %}">
-            <img class="illustr-PNG-PSD" src="{% static 'img/feedback/fork-knife-spoon-copy.png' %}">
-            <img class="img-3" src="{% static 'img/feedback/pizza.png' %}">
-            <img class="img-4" src="{% static 'img/feedback/ramen.png' %}">
-        </div>
-        <div class="contact-info">
-            <div class="overlap-4">
-                <div class="text-wrapper-4" font-family="Homemade Apple">
-                    Contact Info
-                </div>
-                <div class="text-wrapper-5">River Road, Kijani.</div>
-                <div class="image">
-                    <img class="location-icon" src="{% static 'img/contact-us/location-icon.png' %}">
-                </div>
-                <div class="text-wrapper-6">@metro_munch873</div>
-                <img class="instagram-icon" src="{% static 'img/contact-us/instagram-icon.png' %}">
-                <div class="text-wrapper-7">metromunch@gmail.com</div>
-                <img class="mail-icon" src="{% static 'img/contact-us/Email-icon.png' %}">
-                <div class="text-wrapper-8">+873 933 920123</div>
-                <img class="phone-icon" src="{% static 'img/contact-us/phone-icon.png' %}">
-                <div class="overlap-group-3">
-                    <div class="text-wrapper-9">Open 24hrs</div>
-                    <img class="clock-icon" src="{% static 'img/contact-us/clock-icon.png' %}">
-                </div>
-                <img class="line-3" src="{% static 'img/contact-us/line-icon.png' %}">
-            </div>
-                        <!-- END OF BACKGROUND IMAGES -->
-            <div class="footer"></div>
-        </div>
-    </div>
+    <!-- END OF BACKGROUND IMAGES -->
+    <div class="footer"></div>
+</div>
+</div>
 </div>
 <!--  CONTACT US END -->
 {% endblock body %}
