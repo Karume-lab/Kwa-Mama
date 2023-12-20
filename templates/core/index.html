@@ -140,11 +140,14 @@
     </section>
 </main>
 <!--  -->
+<!-- START OF CONTACT US PAGE-->
+<section id="contact_us_form" class="contact-us">
+<div class="feedback">
 <!-- CONTACT US -->
 <div class="feedback" id="contact us">
     <div class="overlap">
         <div class="contact-us-form">
-            <!-- CONTACT US FORM -->
+            <!-- THE START OF CONTACT US FORM -->
             <form id="contactForm" method="post">
                 {% csrf_token %}
                 <div>
@@ -182,8 +185,11 @@
                     <button class="text-wrapper-3" type="submit">Send</button>
                 </div>
             </form>
-            <!-- CONTACT US FORM END -->
+            <!-- THE END CONTACT US FORM -->
         </div>
+    </div>
+</section>
+            <!-- THE START OF BACKGROUND IMAGES -->        
         <div class="background-doodles">
             <img class="img-2" src="{% static 'img/feedback/cake-copy.png' %}">
             <img class="illustr-PNG-PSD" src="{% static 'img/feedback/fork-knife-spoon-copy.png' %}">
@@ -211,9 +217,10 @@
                 </div>
                 <img class="line-3" src="{% static 'img/contact-us/line-icon.png' %}">
             </div>
+                        <!-- END OF BACKGROUND IMAGES -->
             <div class="footer"></div>
         </div>
     </div>
 </div>
-<!-- CONTACT US END -->
+<!--  CONTACT US END -->
 {% endblock body %}

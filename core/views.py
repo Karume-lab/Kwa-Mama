@@ -3,7 +3,6 @@ from . import forms
 from django.http import HttpResponse
 
 
-# Create your views here.
 def index(request):
     if request.method == "POST":
         form = forms.ContactForm(request.POST)
@@ -18,10 +17,17 @@ def index(request):
 def home(request):
     return render(request, "core/home.html")
 
+def catering(request):
+    return render(request,"core/catering.html")
 
 def feedback(request):
-    return render(request, "core/feedback.html")
-
+    if request.method == 'POST':
+        form = FeedbackForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponse("Thank you for your feedback!")
+    return render(request, 'core/feedback.html')
 
 def catering(request):
     return render(request, "core/catering.html")
+
