@@ -6,6 +6,7 @@
 }
 .pizza-reg img{
     width: 250px;
+
 }
 .noodles-reg img{
     width: 250px;
@@ -19,19 +20,20 @@
 
 .pizza-reg{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -50px;
+    left: 15px;
 }
 .noodles-reg{
     position: absolute;
-    top: 0;
+    top: -40px;
     right: 0;
-    transform: rotate(45deg);
+    transform: rotate(33deg);
 }
 .cake-reg{
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     right: 0;
+    transform: rotate(-45deg);
 }
 .spoons-reg{
     position: absolute;
