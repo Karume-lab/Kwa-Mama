@@ -27,7 +27,7 @@
                 {% csrf_token %}
                 {% block form %}
                 {% block form_button %}{% endblock form_button %}
-                <span>{% block form_footer_link %}{% endblock form_footer_link %}</span>
+                {% block form_footer_link %}{% endblock form_footer_link %}
                 {% endblock form %}
             </form>
         {% endblock body %}
