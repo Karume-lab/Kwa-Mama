@@ -28,5 +28,3 @@ home page
 menu
 checkout
 profile page
-
-

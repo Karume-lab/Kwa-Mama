@@ -1,28 +1,37 @@
 {% extends "../registration/base.html" %}
 {% load static %}
 
-{% block title %}Sign Up{% endblock title%}
-
+{% block title %}Sign Up{% endblock title %}
 
 {% block body %}
     {% block form_title %}Welcome to Metro Munch{% endblock form_title %}
-    {% block form %}
-		<div class="reg-form" style="background-image: url({% static 'img/registration/form-background.png' %});">
-			<label for="firstname">First Name</label>
-			<input type="text">
-			<label for="lastname">Last Name</label>
-			<input type="text">
-			<label for="username">Username</label>
-			<input type="text">
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email">
-			<label for="password">Password</label>
-			<input type="password" name="password" id="password">
-			<label for="password-confirm">Password Confirmation</label>
-			<input type="password" name="password-confirmation" id="password-confirmation">
-			{% block form_footer_link %}
-			Already have an account? <a href="{% url 'users:login' %}">Log in</a>
-			{% endblock form_footer_link %}
-		</div>
-    {% endblock form %}
+    {% block form_fields %}
+        <div class="reg-form" style="background-image: url({% static 'img/registration/form-background.png' %});">
+            <form method="post" action="{% url 'users:signup' %}">
+                {% csrf_token %}
+                
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" required>
+                
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" required>
+                
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                
+                <label for="password-confirm">Password Confirmation</label>
+                <input type="password" name="password_confirmation" id="password-confirm" required>
+                
+                <button type="submit">SIGN UP</button>
+                
+                <p>Already have an account? <a href="{% url 'users:login' %}">Log in</a></p>
+            </form>
+        </div>
+    {% endblock form_fields %}
 {% endblock body %}

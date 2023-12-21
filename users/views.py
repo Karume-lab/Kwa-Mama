@@ -5,6 +5,7 @@ from . import forms
 
 
 # Create your views here.
+
 def signup(request):
     if request.method == "POST":
         form = forms.CustomUserCreationForm(request.POST)
@@ -16,6 +17,7 @@ def signup(request):
         form = forms.CustomUserCreationForm()
 
     return render(request, "registration/signup.html", {"form": form})
+
 
 def custom_logout(request):
     logout(request)

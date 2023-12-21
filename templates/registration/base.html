@@ -23,13 +23,11 @@
         </div>
         {% block body %}
             <h2>{% block form_title %}{% endblock form_title %}</h2>
-            <form method="post">
-                {% csrf_token %}
-                {% block form %}
-                {% block form_button %}{% endblock form_button %}
+            {% block form %}
+                {% block form_fields %}{% endblock form_fields %}
                 <span>{% block form_footer_link %}{% endblock form_footer_link %}</span>
-                {% endblock form %}
-            </form>
-        {% endblock body %}
+                {% block submit_button %}{% endblock submit_button %}
+            {% endblock form %}
+            {% endblock body %}
     </body>
 </html>

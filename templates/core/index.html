@@ -30,57 +30,76 @@
     </section>
     <!-- HERO END -->
     <!-- ABOUT US START -->
-    <section id="about-us" class="about-us"></section>
-    <!-- ABOUT US END -->
-    <!-- SERVICES START -->
-    <section id="services" class="services"></section>
-    <!-- SERVICES END -->
-    <!-- CONTACT US START -->
-    <section id="contact-us" class="feedback" id="contact-us">
-        <div class="overlap">
-            <div class="contact-us-form">
-                <!-- THE START OF CONTACT US FORM -->
-                <form id="contactForm" method="post">
-                    {% csrf_token %}
-                    <div>
-                        <div class="overlap-2">
-                            <img class="line" src="{% static 'img/contact-us/line-icon.png' %}">
-                            <div class="text-wrapper-2">Name</div>
-                        </div>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                        >
-                    </div>
-                    <div>
-                        <div class="overlap-3">
-                            <img class="img" src="{% static 'img/contact-us/line-icon.png' %}">
-                            <div class="text-wrapper-2">Email</div>
-                        </div>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        >
-                    </div>
-                    <div>
-                        <div class="overlap-group-2">
-                            <img class="line-2" src="{% static 'img/contact-us/line-icon.png' %}">
-                            <div class="text-wrapper-2">Message</div>
-                        </div>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <div class="div-wrapper">
-                        <button class="text-wrapper-3" type="submit">Send</button>
-                    </div>
-                </form>
-                <!-- THE END CONTACT US FORM -->
-            </div>
+    <section id="about-us" class="about-us">
+        <div>
+            <img src="{% static 'img/index/exterior.jpg' %}" alt="">
+        </div>
+        <div>
+            <img src="{% static 'img/index/team.jpg' %}" alt="">
+        </div>
+        <div>
+            <img src="{% static 'img/index/cheff-specials.jpg' %}" alt="">
+        </div>
+        <div class="about-us-text">
+            Welcome to Metro Munch, where culinary artistry meets heartfelt hospitality.
+            Our journey began with a vision to redefine the dining experience in Juja, Kenya,
+            crafting a menu that celebrates fresh, locally sourced ingredients and a warm,
+            inviting ambiance. At Metro Munch, our chefs are passionate about creating
+            dishes that tell a story of flavor and quality. Whether you're savoring a classic
+            favorite or exploring innovative creations, our commitment to culinary excellence
+            shines through. Complemented by a dedicated team, we aim to make every visit memorable,
+            ensuring that Metro Munch becomes your home away from home. We pride ourselves on
+            sustainability and community engagement, making conscious choices to minimize our ecological
+            footprint. Thank you for choosing Metro Munch - we look forward to welcoming you to a 
+            dining experience that blends exceptional cuisine with genuine hospitality.
         </div>
     </section>
+    <!-- ABOUT US END -->
+    <!-- SERVICES START -->
+    <section id="services" class="services">
+        <div>
+            <div>
+                <img src="{% static 'img/index/service1/jpg' %}" alt="">
+            </div>
+            <h2>Culinary Delights</h2>
+            <p>
+                At Metro Munch, our primary service revolves around delivering an
+                exceptional culinary experience. Our talented chefs curate a diverse
+                and enticing menu featuring a blend of classic favorites and innovative creations
+                . Whether you're indulging in a leisurely brunch, a quick
+                lunch, or a romantic dinner, each dish is crafted with precision,
+                using fresh, locally sourced ingredients to ensure a memorable dining
+                experience.
+            </p>
+        </div>
+        <div>
+            <h2>Warm Hospitality</h2>
+            <p>
+                Beyond the delectable flavors on your plate, we pride ourselves
+                on providing warm and attentive hospitality. Our service extends
+                beyond the food, with a dedicated team of servers and staff
+                committed to making your visit seamless and enjoyable. From the moment
+                you step through our doors, our goal is to create an inviting atmosphere
+                where you feel welcome, cared for, and a part
+                of the Metro Munch family.
+            </p>
+        </div>
+        <div>
+            <h2>Private Events and Catering</h2>
+            <p>
+                Metro Munch offers a unique service for those looking to elevate
+                their special occasions. Our private dining area is the
+                perfect setting for intimate gatherings, celebrations, or corporate events.
+                Additionally, we provide catering services, bringing the same culinary excellence
+                and hospitality to your chosen venue. Let us tailor a menu and experience
+                that caters to your specific needs, making your event an
+                unforgettable affair.
+            </p>
+        </div>
+    </section>
+    <!-- SERVICES END -->
+    <!-- CONTACT US START -->
+    <section id="contact-us" id="contact-us"></section>
     <!-- CONTACT US END -->
     <!-- METRO SPECIALS START -->
     <section id="metro-specials" class="metro-specials">
