@@ -1,26 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Kalam:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Kalam:wght@300;400;700&display=swap');
-.reg-form{
+ @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Kalam:wght@300;400;700&display=swap');
+.reg-forms{
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: absolute;
-    height: fit-content;
     background-position: center;
     background-size: cover;
-    top: -15%;
-    left: 35%;
+    bottom: 40%;
+    left: 34%;
     transform: translate(-25%,40%);
-    width: 800px;
-    height: 70vh;
+    width: 870px;
+    height: 75vh;
     border-radius: 17px;  
 }
 
 .form_title{
     position: absolute;
     top: 9%;
-    right: 37%;
+    right: 36%;
     transform: translate(40%,50%);
     z-index: 4;
     color: #000;
@@ -30,17 +29,17 @@
     
 }
 .form-contents{
+    height: 30vh;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
     position: absolute;
-    right: 18%;
-    top: 20%;
+    right: 15%;
+    top: 70px;
     gap: 15px;
     margin: 35px 0;
 }
-
 
 .signup{
     position: absolute;
@@ -54,27 +53,40 @@
 
 
 .form-contents input{
-    width: 100%;
     padding: 0 5px;
     height: 37px;
     border: none;
     background: none; 
     outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 .username,.pass-wrd{
     border-bottom: 1px solid black; 
-    
+    width: 119%;
+    color: white;
+}
+.username{
+    margin-bottom: 10px;
 }
 .login-button{
-    width: 310px;
+    width: 330px;
     height: max-content;
     border: none;
     border-radius: 50px ;
-    font-size: large;
+    font-size: larger;
     padding: 10px 50px;
     background: #EDD6B3;
+    font-family: kalam;
+    font-weight: 400;
+}
+.signup{
+    position: absolute;
+    right: 11%;
 }
 
 .signup-link{
