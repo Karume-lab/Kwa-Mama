@@ -3,12 +3,6 @@
    width: 1349px;
 
 }
-.header {
-    height: 38px;
-    background-color: #4d2d18;
-
-}
-
 .main {
     background-image: linear-gradient(#8A6240, #CABA9C);
     position: relative;
@@ -141,13 +135,22 @@ input {
     margin-right: 40px;
 }
 
-.input-buttons input {
-    font-weight: 900;
-
+.reset-submit-buttons{
+    display: flex;
+    gap: 70px;
+    margin-top: 10px;
 }
-.input-buttons input{
+
+.reset-submit-buttons button{
     padding: 10px;
     border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    background-color: #EDD6B3;
+    
+}
+.reset{
+    margin-left: 7px;
 }
 
 .thumbs-up img{

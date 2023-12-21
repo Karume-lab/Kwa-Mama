@@ -1,16 +1,14 @@
+{% load static %}
 <!-- HEADER START -->
 <header>
     <!--  -->
     <nav class="navbar">
         <a href="#">
             <div class="logo">
-                <img src="./../../static/img/index/logo-small.png" alt="">
+                <img src="{% static 'img/index/logo-small.png' %}" alt="">
             </div>
         </a>
         <ul class="nav-links">
-            <li>
-                <a href="#">HOME</a>
-            </li>
             <li>
                 <a href="#">ABOUT US</a>
             </li>
@@ -21,31 +19,10 @@
                 <a href="#">METRO SPECIALS</a>
             </li>
             <li>
-                <a href="#">CONTACT US</a>
-            </li>        
+                <a href="#contact us">CONTACT US</a>
+            </li>
         </ul>
     </nav>
-    <!--  -->
-    <section class="hero">
-        <div class="hero-logo">
-            <img src="./../../static/img/index/logo-big.png" alt="">
-        </div>
-        <div class="hero-right">
-            <div class="hero-side-img">
-                <img class="egg-salad" src="./../../static/img/index/egg-salad.png" alt="">
-                <img class="meatballs" src="./../../static/img/index/meatballs.png" alt="">
-            </div>
-            <div class="hero-footer">
-                <div class="hero-text">
-                    <span>Bringing class to cuisine</span>
-                    <span>Good food,perfect service,wonderful mood</span>
-                </div>
-                <div class="cta">
-                    <a href="#">LOG IN</a>
-                    <a href="#">SIGN UP</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--  -->    
 </header>
 <!-- HEADER END -->

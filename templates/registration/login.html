@@ -1,12 +1,22 @@
 {% extends "../registration/base.html" %}
+{% load static %}
 
-{% block title %}Log In{% endblock %}
+{% block title %}Log In{% endblock title%}
 
-{% block content %}
-<h2>Log In</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Log In</button>
-</form>
-{% endblock %}
+
+{% block body %}
+    {% block form_title %}Welcome Back{% endblock form_title %}
+    
+    {% block form %}
+        <div class="reg-form" style="background-image: url({% static 'img/registration/form-background.png' %});">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            {% block form_footer_link %}
+                New to Metro Munch?
+            <a href="{% url 'users:signup' %}">Sign up</a>
+            {% endblock form_footer_link %}
+        </div>
+    {% endblock form %}
+{% endblock body %}

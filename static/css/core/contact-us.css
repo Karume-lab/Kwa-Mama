@@ -1,0 +1,376 @@
+/* .feedback {
+  width: 284px;
+  height: 0%;
+  /* background-color: rgba(255, 255, 255, 1); */
+  /* border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgb(144, 102, 68) 100%,
+    rgb(152, 140, 132) 100%
+  );
+
+}
+ */
+ .feedback {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgb(144, 102, 68), rgb(152, 140, 132));
+  padding: 2%;
+  margin: auto;
+  position: relative;
+}
+
+
+
+.feedback .overlap {
+  position: relative;
+  width: 3049px;
+  height: 1840px;
+  top: -62px;
+  left: -188px;
+}
+
+.feedback .navbar {
+  position: absolute;
+  width: 2849px;
+  height: 141px;
+  top: 62px;
+  left: 188px;
+  background-color: #4e2d18;
+}
+
+.feedback .footer {
+  position: absolute;
+  width: 2849px;
+  height: 141px;
+  top: 1699px;
+  left: 188px;
+  background-color: #4e2d18;
+}
+
+.feedback .contact-us-form {
+  position: absolute;
+  width: 1409px;
+  height: 1386px;
+  top: 203px;
+  left: 406px;
+}
+
+.feedback .overlap-group {
+  position: absolute;
+  width: 1368px;
+  height: 342px;
+  top: 0;
+  left: 0;
+}
+
+.feedback .text-wrapper {
+  position: absolute;
+  width: 960px;
+  top: 0;
+  left: 204px;
+  font-family: "Homemade Apple-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 120px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .div {
+  position: absolute;
+  width: 1368px;
+  top: 216px;
+  left: 0;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 37px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .overlap-2 {
+  position: absolute;
+  width: 1366px;
+  height: 77px;
+  top: 477px;
+  left: 27px;
+}
+
+.feedback .line {
+  width: 1362px;
+  height: 1px;
+  top: 76px;
+  left: 4px;
+  position: absolute;
+  object-fit: cover;
+  color: #4e2d18;
+}
+
+.feedback .text-wrapper-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .overlap-3 {
+  position: absolute;
+  width: 1366px;
+  height: 77px;
+  top: 732px;
+  left: 31px;
+}
+
+.feedback .img {
+  width: 1366px;
+  height: 1px;
+  top: 68px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+  color: #4e2d18;
+}
+
+.feedback .img-2 {
+  position: absolute;
+  top: 1035px;
+  left: 1685px;
+  object-fit: cover;
+  transform: rotate(-41.43deg);
+}
+
+.feedback .illustr-PNG-PSD {
+  position: absolute;
+  width: 623px;
+  height: 669px;
+  top: 62px;
+  left: 188px;
+  object-fit: cover;
+}
+
+.feedback .img-3 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 899px;
+  left: 188px;
+  object-fit: cover;
+  transform: 00;
+}
+
+.feedback .img-4 {
+  position: absolute;
+  width: 679px;
+  height: 515px;
+  top: 62px;
+  left: 1829px;
+  object-fit: cover;
+  transform: rotate(30deg);
+  transform-origin: 0 0;
+}
+
+.feedback .overlap-group-2 {
+  position: absolute;
+  width: 1366px;
+  height: 77px;
+  top: 989px;
+  left: 27px;
+}
+
+.feedback .line-2 {
+  width: 1366px;
+  height: 4px;
+  top: 70px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+  color: #4e2d18;
+}
+
+.feedback .div-wrapper {
+  position: absolute;
+  width: 1353px;
+  height: 132px;
+  top: 1254px;
+  left: 31px;
+  background-color: #946944;
+  border-radius: 20px;
+}
+
+.feedback .text-wrapper-3 {
+  top: 28px;
+  left: 628px;
+  position: absolute;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .background-doodles {
+  position: absolute;
+  width: 2413px;
+  height: 1774px;
+  top: 0;
+  left: 0;
+}
+
+.feedback .contact-info {
+  position: absolute;
+  width: 945px;
+  height: 1195px;
+  top: 341px;
+  left: 2104px;
+}
+
+.feedback .overlap-4 {
+  position: relative;
+  width: 933px;
+  height: 1195px;
+  background-color: #946944;
+  border-radius: 20px;
+}
+
+.feedback .text-wrapper-4 {
+  position: absolute;
+  top: 58px;
+  left: 267px;
+  font-family: "Homemade Apple-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+
+.feedback .text-wrapper-5 {
+  position: absolute;
+  top: 263px;
+  left: 272px;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .location-icon {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  top: 250px;
+  left: 102px;
+}
+
+.feedback .text-wrapper-6 {
+  position: absolute;
+  top: 844px;
+  left: 255px;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .instagram-icon {
+  position: absolute;
+  width: 114px;
+  height: 92px;
+  top: 844px;
+  left: 103px;
+}
+
+.feedback .text-wrapper-7 {
+  position: absolute;
+  top: 651px;
+  left: 267px;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .mail-icon {
+  position: absolute;
+  width: 114px;
+  height: 91px;
+  top: 648px;
+  left: 102px;
+}
+
+.feedback .text-wrapper-8 {
+  position: absolute;
+  top: 458px;
+  left: 255px;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .phone-icon {
+  position: absolute;
+  width: 81px;
+  height: 104px;
+  top: 442px;
+  left: 119px;
+}
+
+.feedback .overlap-group-3 {
+  position: absolute;
+  width: 492px;
+  height: 96px;
+  top: 1020px;
+  left: 45px;
+}
+
+.feedback .text-wrapper-9 {
+  position: absolute;
+  top: 8px;
+  left: 222px;
+  font-family: "Kalam-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.feedback .clock-icon {
+  position: absolute;
+  width: 228px;
+  height: 96px;
+  top: 0;
+  left: 0;
+}
+
+.feedback .line-3 {
+  width: 845px;
+  height: 1px;
+  top: 203px;
+  left: 44px;
+  position: absolute;
+  object-fit: cover;
+}
