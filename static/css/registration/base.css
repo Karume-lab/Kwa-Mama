@@ -20,8 +20,9 @@
 
 .pizza-reg{
     position: absolute;
-    top: -50px;
+    top: -45px;
     left: 15px;
+    transform: rotate(-5deg);
 }
 .noodles-reg{
     position: absolute;
