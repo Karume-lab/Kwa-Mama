@@ -39,3 +39,7 @@
     left: 0;
     transform: rotate(-30deg);
 } 
+
+.form-footer-link {
+    color: red;
+}
