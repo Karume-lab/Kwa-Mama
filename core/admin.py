@@ -16,6 +16,6 @@ class Feedback(admin.ModelAdmin):
     list_display = ["names", 
                     "email", 
                     "message",
-                    ]
+    ]
 
 admin.site.register(models.Feedback, Feedback)

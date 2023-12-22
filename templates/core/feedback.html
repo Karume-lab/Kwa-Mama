@@ -28,33 +28,10 @@
             <img src="{% static 'img/feedback/feedback-thumbs-up.png' %}" />
           </div>
         </div>
-        <div class="rightside-elements">
-
+        <div class="rightside-elements"> 
           <!-- FORM BEGIN -->
-          <form class="form" action="">
-            <div>
-              <p class="feedback-txt">Feedback type</p>
-              <input type="radio" id="choice1" name="feedback-type" required />
-              <label for="choice1">In-house services</label>
-              <input type="radio" id="choice2" name="feedback-type" required />
-              <label for="choice2">Catering services</label>
-            </div>
-
-            <div>
-              <p>Names</p>
-              <input type="text" id="names" name="names" required />
-            </div>
-            <div>
-              <p>Email</p>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div>
-              <p>Message</p>
-              <input type="text" id="message" name="message" required />
-            </div>
-            <div class="rightside-elements">
-                <!-- FORM BEGIN -->
-                <form class="form" id="FeedbackForm" method="post">
+                <form class="form" id="Feedback" method="post">
+                  <input type="hidden" name="csrfmiddlewaretoken" value="your-csrf-token-here">
                     {% csrf_token %}
                     <div>
                         <p class="feedback-txt">Feedback type</p>
@@ -98,21 +75,13 @@
                             id="message"
                             name="message"
                             required
-                        >
-                    </div>
-                    <div class="input-buttons">
-                        <button type="reset">Reset</button>
-                        <button type="submit">Send</button>
-                    </div>
-                </form>
-                <!-- FORM END -->
-            <div class="reset-submit-buttons">
-              <button type="reset" class="reset" >reset</button>
-              <button type="submit" class="submit">submit</button>
-            </div>
-          </form>
-          <!-- FORM END -->
-          
+                            >
+                          </div>
+                          <div class="reset-submit-buttons">
+                            <button type="reset" class="reset" >reset</button>
+                            <button type="submit" class="submit">submit</button>
+                          </div>
+                </form>  
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ class ContactForm(forms.ModelForm):
         model = ContactMessage
         fields = ['name', 'email', 'message']
 
-class FeedbackForm(forms.ModelForm):
+class Feedback(forms.ModelForm):
     class Meta:  
         model = Feedback
         fields = ['names', 'email', 'message']

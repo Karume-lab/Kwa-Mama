@@ -13,7 +13,7 @@ class ContactMessage(models.Model):
 class Feedback(models.Model):
     names = models.CharField(max_length=100, blank=False)
     email = models.EmailField(blank=False)
-    message = models.CharField(max_length=255, blank=False)  # Adjust the max_length as needed
+    message = models.CharField(max_length=255, blank=False)  
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
