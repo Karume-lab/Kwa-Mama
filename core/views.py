@@ -22,7 +22,7 @@ def catering(request):
 
 def feedback(request):
     if request.method == 'POST':
-        form = FeedbackForm(request.POST)
+        form = feedback(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponse("Thank you for your feedback!")
